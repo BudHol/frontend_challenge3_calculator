@@ -1,0 +1,95 @@
+#header {
+    font-family: "Google Sans", serif;
+    font-size: 15px; 
+    text-align: center;
+} 
+
+body {
+    background: linear-gradient(#ffffff, #f0efeb,#dbe7e4,#c5dedd,#fad2e1);
+    min-height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+
+}
+
+#text-display {
+    font-size: 30px;
+}
+
+p {
+    font-family: "Google Sans", sans-serif; 
+    font-size: 15px; 
+    margin-top: -10px; 
+    margin-bottom: -10px;
+}
+
+#display {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: right; 
+    align-items: center;
+    background: rgba(215, 215, 215, 0.15);
+     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 75px; 
+    font-size: 30px; 
+    padding-right: 10px; 
+    border-radius: 10px;
+    font-family: "Google Sans", sans-serif;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+button {
+    width: 70px; 
+    height: 40px; 
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.3);
+     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(55, 55, 55, 0.1);
+    border-radius: 5px; 
+    transition: box-shadow 0.3s ease; 
+    transition: background-color 0.3s ease;
+
+}  
+
+button:hover { 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#reset {
+    background: rgba(255, 0, 0, 0.3);
+     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 0, 0, 0.1); 
+    width: 145px; 
+}
+
+#solve {
+    background: rgba(77, 124, 255, 0.3);
+     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 36, 128, 0.1); 
+    width: 145px;
+} 
+
