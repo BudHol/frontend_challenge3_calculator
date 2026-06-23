@@ -25,7 +25,7 @@ function reset(){
 
 
 function enterNum(button){
-    if (["point","0","1","2","3","4","5","6","7","8","9"].includes(button.id)){
+    if (["point","0","1","2","3","4","5","6","7","8","9","subtract"].includes(button.id)){
         if (display.textContent == "0"){
             display.textContent = button.textContent;
         }
