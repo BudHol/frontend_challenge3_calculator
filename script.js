@@ -25,7 +25,7 @@ function reset(){
 
 
 function enterNum(button){
-    if (["point","0","1","2","3","4","5","6","7","8","9","subtract"].includes(button.id)){
+    if (["point","0","1","2","3","4","5","6","7","8","9"].includes(button.id)){
         if (display.textContent == "0"){
             display.textContent = button.textContent;
         }
@@ -33,13 +33,6 @@ function enterNum(button){
             display.textContent += button.textContent;
         }
 }}
-
-function operate(button){
-    if (button.id == "add"){
-        var1 = Number(display.textContent); 
-        display.textContent = "0";
-    }
-}
 
 
 function takeInput(button){
@@ -63,7 +56,7 @@ inputs.forEach((button)=>{
         if(button.id == "subtract"){
             var1 = Number(display.textContent); 
             display.textContent = "0"; 
-            lastCalc.textContent = String(var1) + " - "; 
+            lastCalc.textContent = String(var1) + " -"; 
             container.insertAdjacentElement("afterend", lastCalc);
         } 
         if(button.id == "multiply"){
@@ -83,7 +76,7 @@ inputs.forEach((button)=>{
             if(lastCalc.textContent.includes("+")){
                  display.textContent = var1 + var2;  
             }
-            else if(lastCalc.textContent.includes("-")){
+            else if(lastCalc.textContent.endsWith("-")){
                 display.textContent = var1 - var2; 
             }
             else if(lastCalc.textContent.includes("x")){
